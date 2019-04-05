@@ -334,3 +334,20 @@ footer {
     order: 1;
   }
 }
+@media (max-width: 500px) {
+  .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .launch {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .blast {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+}

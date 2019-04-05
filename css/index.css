@@ -1,3 +1,48 @@
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 500px) {
+  .space-images {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  img img {
+    width: 28%;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+    height: 100%;
+  }
+}
+/*.btn{
+    @media @phone{
+        display: block;
+        width:400px;
+        height:100px;
+    }
+}*/
+@media (max-width: 500px) {
+  .button-container {
+    width: 400px;
+    height: 100px;
+  }
+}
+@media (max-width: 500px) {
+  .space-images {
+    display: none;
+  }
+}
 .btn {
   display: block;
   background-color: #2b2b46;
@@ -9,13 +54,9 @@
   border-radius: 10px;
   color: white;
 }
-.btn {
-  -webkit-transition-duration: 10s;
-  transition-duration: 10;
-}
-.btn:hoover {
-  background-color: white;
-  color: green;
+.btn:hover {
+  background-color: gray;
+  color: black;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -247,21 +288,49 @@ footer {
   display: flex;
   justify-content: center;
 }
-.home .walk .walk-text {
+.home .walk-text {
   width: 50%;
 }
-.home .walk .walk-text h3 {
+.home h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.home p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .walk-img {
+.home .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-text .walk-img img {
+.home img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .walk-img {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .walk {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  .walk-text {
+    width: 80%;
+    margin: 0 auto 30px;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .walk-text {
+    order: 2;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .walk-img {
+    order: 1;
+  }
 }

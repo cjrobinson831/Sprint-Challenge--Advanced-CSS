@@ -1,1 +1,34 @@
 // Mixins Here
+
+.btn{
+    .custom-btn();
+}
+.custom-btn(@width: 200px, @bgColor: rgb(43, 43, 70), @font-color: white, @radius: 10px, @height: 45px){
+    display: block;
+    background-color: @bgColor;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: @width;
+    height: @height;
+    font-size: 2rem;
+    border-radius: @radius;
+    color:@font-color;
+
+&:hover {
+    background-color: gray;
+    color: black;
+  }
+}
+
+@font-stack: 'Ubuntu', sans-serif;
+html, body {
+    font-family: @font-stack;
+    color: @main-font-color;
+  }
+
+  @font-size: 3.2rem;
+
+  h2 {
+    font-size: @font-size;
+  }
+  
